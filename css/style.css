@@ -1,0 +1,252 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  outline: 1px solid Chocolate;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.top-navigation {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #DDD;
+  z-index: 9999;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0 0.938rem;
+}
+
+.top-navigation .links {
+  color: #838994;
+  font-size: 16px;
+  margin-top: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.top-navigation > .content {
+  height: 4.375rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.top-navigation .links li {
+  text-decoration: none;
+  list-style: none;
+  margin: 1rem 0 0 1.5625rem;
+}
+
+.top-navigation .links .active {
+  color: #4c5058;
+  font-weight: 500;
+}
+
+.top-navigation .links li:hover {
+  cursor: pointer;
+  color: #333333;
+}
+
+.top-navigation .logo {
+  margin-top: 12px
+}
+
+.introduction {
+  background-image: url('../images/first-background.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.938rem;
+  overflow: auto;
+}
+
+.introduction h1,
+.introduction h3 {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+
+.introduction h1 {
+  margin: 0;
+  margin-top: 17.5rem;
+  font-size: 3.125rem;
+}
+
+.introduction h3 {
+  margin-top: 1.25rem;
+  font-size: 1.563rem;
+}
+
+.introduction .buttons {
+  color: white;
+  text-align: center;
+  margin-top: 1.563rem;
+}
+
+button {
+  color: white;
+  width: 9.688rem;
+  background-color: #f15a29;
+  border-width: 0;
+  border-style: none;
+  font-size: 1.125rem;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+}
+
+button:hover {
+  background-color: #d9400e;
+  cursor: pointer;
+}
+
+.cases {
+  background-color: white;
+  padding-bottom: 5rem;
+}
+
+.cases .content {
+  margin-top: 7.875rem;
+  text-align: center;
+  vertical-align: top;
+}
+
+.cases h2 {
+  margin-top: 5rem;
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+
+.cases .devices {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.cases .devices li {
+ list-style-type: none; 
+ width: 33.33333%;
+}
+
+.cases h4 {
+  margin: 2.5rem 0px 1.875rem;
+  font-size: 1.563rem;
+}
+
+
+.social {
+  background-color: #fff;
+  overflow: auto;
+  padding-bottom: 9.375rem;
+  text-align: center;
+}
+
+.social hr {
+  border: 0;
+  border-top: 1px solid #eaebec;
+  margin: 1.313rem 0;
+}
+
+.social .icons > li {
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  margin: 1.25rem 5px;
+  border: 1px solid #eaebec;
+  padding: 0.625rem 0;
+  text-align: center;
+}
+.social .icons > li:hover {
+  cursor: pointer;
+}
+.social .twitter {
+  color: #55acee;
+}
+.social .facebook {
+  color: #4c66a4;
+}
+.social .instagram {
+  color: #3f729b;
+}
+.social .copy {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #838994;
+}
+
+@media (max-width: 600px) {
+  .top-navigation > .content {
+    text-align: center;
+    flex-flow: column wrap;
+    height: auto;
+  }
+  .top-navigation .links {
+    margin-top: 1rem;
+    justify-content: space-around;
+  }
+  .top-navigation .links li {
+    margin: .1875rem 0 0 0;
+    width: 33.333333%;
+  }
+  .top-navigation .logo {
+    flex: 1 100%;
+    margin: auto;
+  }
+  .cases .devices li {
+    width: 40%; 
+  }
+}
+
+@media (max-width: 400px) {
+  .top-navigation {
+    position: static; 
+  }
+  .top-navigation .links {
+    flex-flow: column wrap;
+  }
+  .top-navigation .links li {
+    margin: .1875rem 0 0 0;
+    width: 100%;
+  }
+  .cases .devices li {
+    width: 100%; 
+  }
+}
